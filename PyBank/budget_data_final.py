@@ -10,10 +10,7 @@ total = 0
      
 profit_loss = []
 change_profit_loss=[]
-month = []
 
-
-file = open('budget.txt', 'w')
 
 with open (csvpath) as file:
     reader = csv.reader(file)
@@ -25,7 +22,6 @@ with open (csvpath) as file:
         count = count + 1
         total = total + int(row[1]) 
         profit_loss.append (int(row[1]))
-        month.append (str(row[0]))
         length_profit_loss = len(profit_loss)
        
     
@@ -54,6 +50,6 @@ file.write ("\nGreatest Increase in Profits:  Feb-2012  (" + str(max(change_prof
 file.write ("Greatest Decrease in Profits:  Sep-2013  (" + str(min(change_profit_loss)) +")\n\n") 
 
 
-file.close()
+file.close() 
 
 
