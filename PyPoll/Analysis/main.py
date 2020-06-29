@@ -2,9 +2,9 @@ import os
 import csv
 from collections import Counter
 
-csvpath = os.path.join ("C:\Users\mokae\python-challenge\PyPoll\Resource\election_data.csv")
+csvpath = os.path.join("C:/Users/mokae/OneDrive/Desktop/New folder/election_data.csv")
 
-total_votes = 0
+total_votes = 0  
 candidate_names_only = []
 
 
