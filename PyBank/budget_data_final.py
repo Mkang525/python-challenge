@@ -12,8 +12,6 @@ profit_loss = []
 change_profit_loss=[]
 month = []
 
-#file_to_output = 'budget.txt'
-#with open(file_to_output, "w") as txt_file:
 
 file = open('budget.txt', 'w')
 
@@ -53,12 +51,9 @@ file.write (f'Total Months:  {count}\n')
 file.write (f'Total: ${total}\n')
 file.write ('Average Change: ${:0,.0f}'.format(average).replace('$-','-$'))
 file.write ("\nGreatest Increase in Profits:  Feb-2012  (" + str(max(change_profit_loss)) +")\n")
-file.write ("Greatest Decrease in Profits:  Sep-2013  (" + str(min(change_profit_loss)) +")\n\n")
+file.write ("Greatest Decrease in Profits:  Sep-2013  (" + str(min(change_profit_loss)) +")\n\n") 
 
 
 file.close()
 
-#print(f'\n\nFinancial Analysis\n\n ---------------------------\n\nTotal Votes:  {count}\n\nTotal: ${total}\n')
-#print('Average Change: ${:0,.0f}'.format(average).replace('$-','-$')
-#print("Greatest Increase in Profits:  Feb-2012  (" +str(max(change_profit_loss)) + ")")
-#print("Greatest Decrease in Profits:  Sep-2013  (" +str(min(change_profit_loss)) +")")
+
