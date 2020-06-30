@@ -1,3 +1,9 @@
+'''
+PyPoll Solution
+Author: Monica Kang
+'''
+
+
 import os
 import csv
 from collections import Counter
